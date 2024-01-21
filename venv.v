@@ -2,10 +2,8 @@ module venv
 
 import os
 
-const (
-	w_dir    = os.getwd()
-	env_main = '.env'
-)
+const w_dir = os.getwd()
+const env_main = '.env'
 
 // Main Config the parser function
 pub struct LoaderConfig {
