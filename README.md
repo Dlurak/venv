@@ -1,11 +1,11 @@
 # venv
 
-Simple `.env` parser and loader for VLang projects.
+Fork the simple `.env` parser and loader for VLang projects by [tbdsux](https://github.com/tbdsux/venv).
 
 ## Install
 
 ```
-v install TheBoringDude.venv
+v install Dlurak.venv
 ```
 
 ## What it does?
@@ -15,7 +15,7 @@ Loads the variables configured from your `.env` file in your root project and ad
 ## Usage
 
 ```v
-import theboringdude.venv
+import dlurak.venv
 
 import os
 
@@ -25,7 +25,7 @@ fn main() {
     venv.load_env()
     // if you want to overwrite the variables
     // use `venv.load_env(overwrite: true)`
-    // you can also just use `venv.load_env({})`
+    // you can also just use `venv.load_env_conf(LoaderConfig{})`
     //  this will default to true
 
     // you can now access your variables
@@ -76,3 +76,4 @@ HELLO=WORLD
 ```
 
 #### &copy; TheBoringDude
+#### Maintained by Dlurak
